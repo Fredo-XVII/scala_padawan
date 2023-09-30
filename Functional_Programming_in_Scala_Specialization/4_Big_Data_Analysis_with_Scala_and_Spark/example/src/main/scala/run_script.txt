@@ -1,0 +1,9 @@
+// Exercise #1
+
+// Terminal
+// sbt
+// sbt Terminal
+// console # gets you scala
+
+// scala terminal
+// import example.Lists._
