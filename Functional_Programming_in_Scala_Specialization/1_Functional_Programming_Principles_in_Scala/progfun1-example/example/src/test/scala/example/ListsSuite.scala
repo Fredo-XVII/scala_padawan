@@ -21,7 +21,7 @@ class ListsSuite extends munit.FunSuite:
   }
 
   test("one plus one is three (0pts)?") {
-    assert(1 + 1 == 3) // This assertion fails! Go ahead and fix it.
+    assert(1 + 1 == 2) // This assertion fails! Go ahead and fix it.
   }
 
   /**
@@ -57,7 +57,7 @@ class ListsSuite extends munit.FunSuite:
    * when writing tests.
    */
   test("details why one plus one is not three (0pts)") {
-    assertEquals(1 + 1, 3) // Fix me, please!
+    assertEquals(1 + 1, 2) // Fix me, please!
   }
 
   /**
@@ -106,7 +106,17 @@ class ListsSuite extends munit.FunSuite:
     assert(max(List(3, 7, 2)) == 7)
   }
 
+  test("max of a negative numbers (10pts)") {
+    assert(max(List(-3, -7, -2)) == -2)
+  }
 
+  test("max of zero (10pts)") {
+    assert(max(List(-10, -1, 0)) == 0)
+  }
+
+  test("sum of empty list (10pts)") {
+    assert(sum(List()) == 0)
+  }
 
   import scala.concurrent.duration.*
   override val munitTimeout = 1.seconds
