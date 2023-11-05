@@ -12,7 +12,9 @@ object RecFun extends RecFunInterface:
   /**
    * Exercise 1
    */
-  def pascal(c: Int, r: Int): Int = ???
+  def pascal(c: Int, r: Int): Int = 
+    if r == 0 then 1
+    if r >= 1 then 
 
   /**
    * Exercise 2
